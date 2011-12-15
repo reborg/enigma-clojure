@@ -1,0 +1,6 @@
+./test
+./test-resources
+./src
+./classes
+./resources
+./lib/dev/*
