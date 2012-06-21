@@ -4,6 +4,10 @@ Enigma clojure is the starting point project for the dojo of the BBC clojure-ug.
 
 Enigma clojure implementes the paper enigma version that can be found at http://mckoss.com/Crypto/Enigma.htm
 
+## How to bootstrap the project
+* install leningen https://github.com/technomancy/leiningen/
+* type: lein midje to see the first failure
+
 ## Paper enigma machine usage example
 
 #### Setup
