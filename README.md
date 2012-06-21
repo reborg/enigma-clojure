@@ -5,8 +5,18 @@ Enigma clojure is the starting point project for the dojo of the BBC clojure-ug.
 Enigma clojure implementes the paper enigma version that can be found at http://mckoss.com/Crypto/Enigma.htm
 
 ## How to bootstrap the project
+
+#### command line
 * install leningen https://github.com/technomancy/leiningen/
 * type: lein midje to see the first failure
+
+#### IntelliJ Idea
+* Install "La Clojure" plugin
+* Install the Leningen plugin
+* Goto open project and point to the enigma-clojure project project.clj file
+* The project should open fine in IntelliJ, you should see libraries from lib, lib/dev as dependencies
+* Right click on test\_core.clj and run it, it should give a failed test
+* If you get a "missing clojure classes" try to manually add each and every single file from the lib directory
 
 ## Paper enigma machine usage example
 
