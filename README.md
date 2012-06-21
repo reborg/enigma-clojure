@@ -15,12 +15,13 @@ Enigma clojure implementes the paper enigma version that can be found at http://
 2. Position initial wheel positions by sliding the indicated window letter up to the first row.
 
 #### Operation
-(Start at the input column at right, then work left to reflector, and then back to the right to the output column.)
+Start at the input column at right, then work left to reflector, and then back to the right to the output column.
+
 1. If the up arrow appears in the window row, shift that rotor and the rotor to the left up one row (the Right Rotor is always shifted up one row before each letter is encoded/decoded).
 2. Select letter to encode/decode in the Input column.
 3. Read adjacent letter, X , in right hand column of the Right Rotor; select the letter X in the left hand column of the Rotor.
 4. Repeat for Center Rotor.
-5. Repeat for Left Rotor.
+5. Repeat for Left Rotor.j
 6. Read the adjacent letter, R , in the Reflector; select the other letterR intheReflector.
 7. Read adjacent letter, Y , in left hand column of the Left Rotor; selecttheletterY intherighthandcolumnoftheRotor.
 8. Repeat for Center Rotor.
