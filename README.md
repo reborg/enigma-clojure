@@ -13,6 +13,7 @@ Enigma clojure implementes the paper enigma version that can be found at http://
 #### Setup
 1. Select left/center/right rotors.
 2. Position initial wheel positions by sliding the indicated window letter up to the first row.
+
 #### Operation
 (Start at the input column at right, then work left to reflector, and then back to the right to the output column.)
 1. If the up arrow appears in the window row, shift that rotor and the rotor to the left up one row (the Right Rotor is always shifted up one row before each letter is encoded/decoded).
@@ -25,6 +26,7 @@ Enigma clojure implementes the paper enigma version that can be found at http://
 8. Repeat for Center Rotor.
 9. Repeat for Right Rotor.
 10. Write down the adjacent letter, Z , in the output column. Repeat for each letter of the message.
+
 #### Example
 Initial setting: I-II-III: MCK, Letter E encodes to Q. Sample Message: QMJIDO MZWZJFJR
 
