@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/clojure-1.4.0.jar"/>
+	<classpathentry kind="lib" path="lib/dev"/>
+	<classpathentry kind="lib" path="lib/lein-eclipse-1.0.0.jar"/>
+	<classpathentry kind="lib" path="/Users/borgar01/prj/dojo/enigma-clojure/lib/dev/algo.monads-0.1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/borgar01/prj/dojo/enigma-clojure/lib/dev/colorize-0.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/borgar01/prj/dojo/enigma-clojure/lib/dev/core.incubator-0.1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/borgar01/prj/dojo/enigma-clojure/lib/dev/core.unify-0.5.2.jar"/>
+	<classpathentry kind="lib" path="/Users/borgar01/prj/dojo/enigma-clojure/lib/dev/joda-time-2.0.jar"/>
+	<classpathentry kind="lib" path="/Users/borgar01/prj/dojo/enigma-clojure/lib/dev/math.combinatorics-0.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/borgar01/prj/dojo/enigma-clojure/lib/dev/midje-1.4.0.jar"/>
+	<classpathentry kind="lib" path="/Users/borgar01/prj/dojo/enigma-clojure/lib/dev/ordered-1.2.0.jar"/>
+	<classpathentry kind="lib" path="/Users/borgar01/prj/dojo/enigma-clojure/lib/dev/swiss-arrows-0.1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/borgar01/prj/dojo/enigma-clojure/lib/dev/tools.macro-0.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/borgar01/prj/dojo/enigma-clojure/lib/dev/utilize-0.2.3.jar"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>
