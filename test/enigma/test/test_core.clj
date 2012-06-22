@@ -5,8 +5,12 @@
 
 (facts "a single rotor non shifting enigma machine"
        (fact "it translates E to Y given the K offset"
-             (enigma {:offset "k" :input "e"}) => "y"))
+             (enigma {:offset "a" :input "a"}) => "a"))
 
 (facts "rotor wiring"
-       (fact "no shifting must be explicit in input"
-             (r-rotor {:offset "k" :input "e" :shift false}) => "y"))
+       (fact "it translates an input letter given the offset"
+             (r-rotor {:offset "a" :input "a"}) => "a"))
+
+(facts "shifting sequences of letters"
+       (fact "no shift required if letter is already first"
+             (shift ["a" "b" "c"] "a") => ["a" "b" "c"]))
