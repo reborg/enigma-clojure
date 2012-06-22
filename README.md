@@ -1,6 +1,6 @@
 # Enigma Clojure
 
-Enigma clojure is the starting point project for the dojo of the BBC clojure-ug. As such master will always be an empty starting implementation and different solutions are tracked as branches.
+This implementation of the enigma machine explores the variant in which the structure holding the mappiing are explicit, i.e. maps of one value to another map of 26 characters. Which one of the 26 is the rotor output is given by the "offset" given as an input. The offset is what the enigma machine shows in the rotor window as the current key.
 
 Enigma clojure implementes the paper enigma version that can be found at http://mckoss.com/Crypto/Enigma.htm
 

@@ -3,6 +3,10 @@
         clojure.test
         midje.sweet))
 
-(facts "enigma machine"
-       (fact "implementing the enigma machine in software is fun! (please fix me)"
-             (str "is boring") => falsey))
+(facts "a single rotor non shifting enigma machine"
+       (fact "it translates E to Y given the K offset"
+             (enigma {:offset "k" :input "e"}) => "y"))
+
+(facts "rotor wiring"
+       (fact "no shifting must be explicit in input"
+             (r-rotor {:offset "k" :input "e" :shift false}) => "y"))
