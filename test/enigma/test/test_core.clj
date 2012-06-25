@@ -8,8 +8,14 @@
              (enigma {:offset "a" :input "a"}) => "a"))
 
 (facts "first rotor wiring"
-       (fact "it translates an input letter given the offset"
-             (r-rotor {:offset "a" :input "a"}) => "a"))
+       (fact "it translates an input letter given the no-shift offset 'A'"
+             (r-rotor {:offset "a" :input "a"}) => "a"
+             (r-rotor {:offset "a" :input "b"}) => "j"
+             (r-rotor {:offset "a" :input "c"}) => "d")
+       (fact "it translates an input letter given the 'K' offset"
+             (r-rotor {:offset "k" :input "a"}) => "q"
+             (r-rotor {:offset "k" :input "b"}) => "g"
+             (r-rotor {:offset "k" :input "c"}) => "z"))
 
 (facts "shifting sequences of letters"
        (fact "split and swap the sequence based on the given letter"
