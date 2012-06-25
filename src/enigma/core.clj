@@ -7,7 +7,8 @@
   ["a" "e" "o" "v" "f" "y" "p" "n" "z" "g" "q" "c" "m" "t" "w" "h" "l" "b" "x" "u" "r" "i" "s" "k" "d" "j"])
 
 (defn shift [letters new-start]
-  (conj (vec (rest letters)) (pop letters)))
+  (let [letter-split (split-with (fn [x] (not (= x new-start))) letters)]
+    (vec (apply concat (list (last letter-split) (first letter-split))))))
 
 (def r-rotor-map
   {"a" (zipmap alphpabet r-rotor-wiring)
