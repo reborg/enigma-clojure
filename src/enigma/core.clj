@@ -11,7 +11,7 @@
     (vec (apply concat (list (last letter-split) (first letter-split))))))
 
 (def r-rotor-map
-  {"a" (zipmap alphpabet r-rotor-wiring)
+  {"a" (zipmap alphpabet (shift r-rotor-wiring "a"))
    "b" (zipmap alphpabet (shift r-rotor-wiring "j"))
    "c" (zipmap alphpabet (shift r-rotor-wiring "d"))
    "d" (zipmap alphpabet (shift r-rotor-wiring "k"))
