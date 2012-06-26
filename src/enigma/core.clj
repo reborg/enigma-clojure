@@ -6,6 +6,9 @@
 (def r-rotor-wiring
   ["a" "j" "d" "k" "s" "i" "r" "u" "x" "b" "l" "h" "w" "t" "m" "c" "q" "g" "z" "n" "p" "y" "f" "v" "o" "e"])
 
+(defn ++ [letter]
+  (alphpabet (mod (+ 1 (.indexOf alphpabet letter)) 26)))
+
 (defn shift [letters new-start]
   (let [letter-split (split-with (fn [x] (not (= x new-start))) letters)]
     (vec 
@@ -21,7 +24,7 @@
            (map #(zipmap (shift alphpabet %) r-rotor-wiring) alphpabet))))
 
 (defn r-rotor [input]
-  ((r-rotor-map (input :offset)) (input :input)))
+  ((r-rotor-map (++ (input :offset))) (input :input)))
 
 (defn enigma [input]
   (r-rotor input))
