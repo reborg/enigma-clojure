@@ -5,7 +5,7 @@
 
 (facts "a single rotor non shifting enigma machine"
        (fact "it translates E to Y given the K offset"
-             (enigma {:offset "a" :input "a"}) => "a"))
+             (enigma {:offset "k" :input "e"}) => "y"))
 
 (facts "first rotor wiring"
        (fact "it translates an input letter given the no-shift offset 'A'"
