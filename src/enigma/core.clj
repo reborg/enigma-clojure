@@ -6,5 +6,3 @@
 
 (defn rotor [cipher start-pos input] 
   (if (= input "E") "E" "V"))
-
-
