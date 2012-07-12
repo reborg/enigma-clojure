@@ -1,8 +1,6 @@
 (ns enigma.core)
 
-(def r-rotor
-  {"b" "d" "f" "h" "j" "l" "c" "p" "r" "t" "x" "v" "z" "n" "y" "e" "i" "w" "g" "a" "k" "m" "u" "s" "q" "o"})
-
+(defn index-of [letter-in-the-alphabet])
 
 (defn rotor [cipher start-pos input] 
-  (if (= input "E") "E" "V"))
+  ((vec (map #(str %) (seq cipher))) (+ (index-of input) (index-of start-pos))))
